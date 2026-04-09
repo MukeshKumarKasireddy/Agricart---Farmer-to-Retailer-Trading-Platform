@@ -1,23 +1,25 @@
 package com.farmer.util;
 
+import java.security.Key;
+import java.util.Date;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
-import org.springframework.stereotype.Component;
-
-import java.security.Key;
-import java.util.Date;
 
 @Component
 public class JwtUtil {
 
-    private static final String SECRET_KEY =
-            "my_super_secret_key_for_farmer_app_which_should_be_very_long";
+    @Value("${jwt.secret}")
+private String secretKey;
 
     private static final long EXPIRATION_TIME = 1000 * 60 * 60; // 1 hour
 
     private Key getSigningKey() {
-        return Keys.hmacShaKeyFor(SECRET_KEY.getBytes());
+        return Keys.hmacShaKeyFor(secretKey.getBytes());
     }
 
     public String generateToken(String email, String role) {
