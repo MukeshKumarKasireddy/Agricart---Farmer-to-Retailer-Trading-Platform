@@ -83,8 +83,8 @@ agricart/
 
 ### 1. Clone the repository
 
-git clone https://github.com/your-username/agricart.git
-cd agricart
+git clone https://github.com/MukeshKumarKasireddy/Agricart---Farmer-to-Retailer-Trading-Platform
+cd Agricart
 
 ---
 
