@@ -1,14 +1,11 @@
-# Use Java 17
 FROM eclipse-temurin:17-jdk
 
-# Set working directory
 WORKDIR /app
 
-# Copy project files
 COPY . .
 
-# Build the app
-RUN chmod +x mvnw && ./mvnw clean package -DskipTests
+# Install Maven and build
+RUN apt-get update && apt-get install -y maven \
+    && mvn clean package -DskipTests
 
-# Run the jar
 CMD ["java", "-jar", "target/*.jar"]
