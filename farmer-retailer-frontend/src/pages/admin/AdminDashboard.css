@@ -1,0 +1,37 @@
+.admin-container {
+  padding: 24px;
+}
+
+.admin-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2A7D3E;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #FFFFFF;
+}
+
+.users-table th,
+.users-table td {
+  border: 1px solid rgba(93, 64, 55, 0.2);
+  padding: 10px;
+  font-size: 14px;
+}
+
+.users-table th {
+  background-color: #F5F0E6;
+  font-weight: 600;
+  color: #5D4037;
+}
+
+.users-table tr:nth-child(even) {
+  background-color: #FBF8F2;
+}
+
+.error-text {
+  color: #C62828;
+  font-weight: 500;
+}

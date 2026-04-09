@@ -1,0 +1,23 @@
+# Node
+node_modules/
+
+# Env
+.env
+
+# Build
+build/
+dist/
+target/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Git (extra safety)
+.git
