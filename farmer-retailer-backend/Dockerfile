@@ -2,14 +2,18 @@ FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
 
+# Copy project
 COPY . .
 
-# Move into correct folder where pom.xml exists
+# Move to correct folder (IMPORTANT)
 WORKDIR /app/farmer
 
-# Install Maven and build
+# Install Maven + build
 RUN apt-get update && apt-get install -y maven \
     && mvn clean package -DskipTests
 
-# Run app
-CMD ["java", "-jar", "target/*.jar"]
+# Debug: show files (optional but useful)
+RUN ls -l target
+
+# Run jar safely
+CMD ["sh", "-c", "java -jar target/*.jar"]
