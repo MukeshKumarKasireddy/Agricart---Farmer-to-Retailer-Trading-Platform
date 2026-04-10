@@ -26,6 +26,7 @@ import FarmerVerification from "./pages/dashboard/farmer/FarmerVerification";
 import RetailerOrders from "./pages/dashboard/retailer/RetailerOrders";
 import MyProducts from "./pages/dashboard/farmer/MyProducts";
 import AddProduct from "./pages/dashboard/farmer/AddProduct";
+import FarmerAnalytics from "./pages/dashboard/farmer/FarmerAnalytics";
 import UserProfile from "./pages/dashboard/farmer/UserProfile";
 import FarmerTransactions from "./pages/dashboard/farmer/FarmerTransactions";
 import RetailerTransactions from "./pages/dashboard/retailer/RetailerTransactions";
@@ -172,6 +173,16 @@ function AppRoutes() {
             </RoleRoute>
           }
         />
+
+        <Route
+  path="analytics"
+  element={
+    <RoleRoute allowedRoles={["FARMER"]}>
+      <FarmerAnalytics />
+    </RoleRoute>
+  }
+/>
+
         <Route
           path="farmer-profile"
           element={
