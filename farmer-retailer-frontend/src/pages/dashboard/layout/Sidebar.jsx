@@ -40,7 +40,7 @@ const Sidebar = ({ isOpen, closeSidebar, onLogout }) => {
             <NavLink to="/dashboard/reviews">Reviews</NavLink>
             <NavLink to="/dashboard/notifications">Notifications</NavLink>
             <NavLink to="/dashboard/analytics">Analytics</NavLink>
-            <NavLink to="/dashboard/help">Help & Support</NavLink>
+            <NavLink to="/dashboard/farmer-help">Help & Support</NavLink>
           </>
         )}
 
@@ -65,11 +65,11 @@ const Sidebar = ({ isOpen, closeSidebar, onLogout }) => {
             <NavLink to="/dashboard/admin">Dashboard</NavLink>
             <NavLink to="/dashboard/farmers">Farmers</NavLink>
             <NavLink to="/dashboard/retailers">Retailers</NavLink>
-            <NavLink to="/dashboard/products">Products</NavLink>
-            <NavLink to="/dashboard/orders">Orders</NavLink>
-            <NavLink to="/dashboard/transactions">Transactions</NavLink>
+            <NavLink to="/dashboard/admin-products">Products</NavLink>
+            <NavLink to="/dashboard/admin-orders">Orders</NavLink>
+            <NavLink to="/dashboard/admin-transactions">Transactions</NavLink>
             <NavLink to="/dashboard/manage-users">Manage Users</NavLink>
-            <NavLink to="/dashboard/profile">Profile</NavLink>
+            <NavLink to="/dashboard/admin-profile">Profile</NavLink>
             <NavLink to="/dashboard/support">Support</NavLink>
             <NavLink to="/dashboard/settings">Settings</NavLink>
           </>

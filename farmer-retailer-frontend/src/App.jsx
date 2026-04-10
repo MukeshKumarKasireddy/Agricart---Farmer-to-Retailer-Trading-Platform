@@ -197,7 +197,7 @@ function AppRoutes() {
           }
         />
           <Route
-          path="help"
+          path="farmer-help"
           element={
             <RoleRoute allowedRoles={["FARMER"]}>
               <HelpSupport />
@@ -232,7 +232,7 @@ function AppRoutes() {
           }
         />
         <Route
-          path="products"
+          path="admin-products"
           element={
             <RoleRoute allowedRoles={["ADMIN"]}>
               <Products />
@@ -240,7 +240,7 @@ function AppRoutes() {
           }
         />
         <Route
-          path="orders"
+          path="admin-orders"
           element={
             <RoleRoute allowedRoles={["ADMIN"]}>
               <Orders />
@@ -248,7 +248,7 @@ function AppRoutes() {
           }
         />
         <Route
-          path="transactions"
+          path="admin-transactions"
           element={
             <RoleRoute allowedRoles={["ADMIN"]}>
               <Transactions />
@@ -264,7 +264,7 @@ function AppRoutes() {
           }
         />
         <Route
-          path="profile"
+          path="admin-profile"
           element={
             <RoleRoute allowedRoles={["ADMIN"]}>
               <Profile />
