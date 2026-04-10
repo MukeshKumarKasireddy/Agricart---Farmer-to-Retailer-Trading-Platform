@@ -21,6 +21,7 @@ import Profile from "./pages/admin/pages/Profile";
 import Settings from "./pages/admin/pages/Settings";  
 import Notifications from "./pages/dashboard/Notifications";
 import VerificationModal from "./components/VerificationModal";
+import RetailerAnalytics from "./pages/dashboard/retailer/RetailerAnalytics";
 import FarmerOrders from "./pages/dashboard/farmer/FarmerOrders";
 import FarmerVerification from "./pages/dashboard/farmer/FarmerVerification";
 import RetailerOrders from "./pages/dashboard/retailer/RetailerOrders";
@@ -115,6 +116,15 @@ function AppRoutes() {
             </RoleRoute>
           }
         /> 
+
+        <Route
+  path="analytics"
+  element={
+    <RoleRoute allowedRoles={["RETAILER"]}>
+      <RetailerAnalytics />
+    </RoleRoute>
+  }
+/>
         <Route
           path="my-reviews"
           element={

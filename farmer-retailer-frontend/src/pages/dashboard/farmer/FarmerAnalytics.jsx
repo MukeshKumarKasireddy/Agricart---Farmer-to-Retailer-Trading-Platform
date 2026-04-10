@@ -59,7 +59,7 @@ const FarmerAnalytics = () => {
               <XAxis dataKey="name" />
               <YAxis />
               <Tooltip />
-              <Bar dataKey="value" />
+              <Bar dataKey="value" fill="#2A7D3E" />
             </BarChart>
           </ResponsiveContainer>
         </div>
@@ -73,7 +73,7 @@ const FarmerAnalytics = () => {
               <XAxis dataKey="name" />
               <YAxis />
               <Tooltip />
-              <Bar dataKey="value" />
+              <Bar dataKey="value" fill="#1976d2" />
             </BarChart>
           </ResponsiveContainer>
         </div>
