@@ -157,7 +157,7 @@ function AppRoutes() {
           }          
         />
         <Route
-          path="orders"
+          path="farmer-orders"
           element={
             <RoleRoute allowedRoles={["FARMER"]}>
               <FarmerOrders />
@@ -173,7 +173,7 @@ function AppRoutes() {
           }
         />
         <Route
-          path="profile"
+          path="farmer-profile"
           element={
             <RoleRoute allowedRoles={["FARMER"]}>
               <UserProfile />
