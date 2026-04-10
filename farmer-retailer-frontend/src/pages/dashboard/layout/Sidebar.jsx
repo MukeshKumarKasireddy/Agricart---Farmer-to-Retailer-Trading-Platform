@@ -34,9 +34,9 @@ const Sidebar = ({ isOpen, closeSidebar, onLogout }) => {
           <>
             <NavLink to="/dashboard/add-product">Add Products</NavLink>
             <NavLink to="/dashboard/products">My Products</NavLink>
-            <NavLink to="/dashboard/orders">Orders</NavLink>
+            <NavLink to="/dashboard/farmer-orders">Orders</NavLink>
             <NavLink to="/dashboard/transactions">Payments</NavLink>
-            <NavLink to="/dashboard/profile">User Profile</NavLink>
+            <NavLink to="/dashboard/farmer-profile">User Profile</NavLink>
             <NavLink to="/dashboard/reviews">Reviews</NavLink>
             <NavLink to="/dashboard/notifications">Notifications</NavLink>
             <NavLink to="/dashboard/analytics">Analytics</NavLink>
