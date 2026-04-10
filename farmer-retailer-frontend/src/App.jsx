@@ -118,7 +118,7 @@ function AppRoutes() {
         /> 
 
         <Route
-  path="analytics"
+  path="retailer-analytics"
   element={
     <RoleRoute allowedRoles={["RETAILER"]}>
       <RetailerAnalytics />

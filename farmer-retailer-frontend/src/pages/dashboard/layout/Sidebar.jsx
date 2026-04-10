@@ -54,7 +54,7 @@ const Sidebar = ({ isOpen, closeSidebar, onLogout }) => {
             <NavLink to="/dashboard/profile">Profile</NavLink>
             <NavLink to="/dashboard/my-reviews">My Reviews</NavLink>
             <NavLink to="/dashboard/notifications">Notifications</NavLink>
-            <NavLink to="/dashboard/analytics">Analytics</NavLink>
+            <NavLink to="/dashboard/retailer-analytics">Analytics</NavLink>
             <NavLink to="/dashboard/help">Help & Support</NavLink>
           </>
         )}
